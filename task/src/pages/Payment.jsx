@@ -3,6 +3,7 @@ import "./pay.css";
 import { useNavigate } from "react-router-dom";
 
 function Payment() {
+  const navigate=useNavigate();
   const [paymentMethod, setPaymentMethod] = useState("");
   const [billingDetails, setBillingDetails] = useState({
     name: "",
@@ -21,6 +22,7 @@ function Payment() {
       return;
     }
     alert(`Payment successful using ${paymentMethod}`);
+    navigate("/");
   };
 
   return (

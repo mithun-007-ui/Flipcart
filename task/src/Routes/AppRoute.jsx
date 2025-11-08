@@ -4,7 +4,6 @@ import Admin from "../pages/Admin";
 import Cart from "../pages/Cart";
 import Login from '../pages/Login';
 import Payment from "../pages/Payment";
-
 function AppRoute() {
   return (
     <Routes>
@@ -15,5 +14,4 @@ function AppRoute() {
     </Routes>
   );
 }
-
 export default AppRoute;

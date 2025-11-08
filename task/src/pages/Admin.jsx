@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import { useNavigate } from "react-router-dom";
 import './Admin.css'
 import Items from'./Items'
 import Cart from './Cart'   
@@ -21,11 +22,8 @@ const addToCart = (item) => {
       <li><a href= "/Admin">Home</a></li>
       <li><a href= "/Login">Login</a></li>
       </ul>
-      <div><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNit-5k7lXLMpGsJt2iDIeB9PSNqxo0E9a9w&s'></img></div>
-      
-
+      <div><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNit-5k7lXLMpGsJt2iDIeB9PSNqxo0E9a9w&s'></img></div>   
     </div>
-    
     </nav>
     <div>
      <Items addToCart={addToCart}/>

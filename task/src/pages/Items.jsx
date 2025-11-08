@@ -1,11 +1,12 @@
 import React from 'react';
 
 function Items({ addToCart }) {
-  const products = [
+  const products=[
 {
   name: 'Dell Monitor',
   price: 8999,
   img: 'https://rukminim2.flixcart.com/image/240/240/xif0q/monitor/w/i/f/-original-imahagy2cefszqgy.jpeg?q=60',
+  
 },
 {
   name: 'Mens Shirt',
@@ -51,7 +52,7 @@ function Items({ addToCart }) {
 
   return (
     <div>
-      <br /><br /><br /><br /><br />
+      <br/><br/><br/><br/><br/>
       <div
         style={{
         display: 'flex',
@@ -74,5 +75,4 @@ function Items({ addToCart }) {
     </div>
   );
 }
-
 export default Items;

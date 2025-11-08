@@ -4,16 +4,12 @@
   background: #fff;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 10px black;
 }
 
 .payment-container h2 {
   text-align: center;
   color: #333;
-}
-
-.form-section {
-  margin-bottom: 20px;
 }
 
 input, select {
@@ -27,13 +23,11 @@ input, select {
 .pay-btn {
   width: 100%;
   padding: 10px;
-  background-color: #28a745;
+  background-color: greenyellow;
   color: white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
 }
 
-.pay-btn:hover {
-  background-color: #218838;
-}
+

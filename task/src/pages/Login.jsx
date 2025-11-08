@@ -4,13 +4,13 @@ function Login() {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
+  // const [error, setError] = useState("");
 
   const handleLogin = (e) => {
     e.preventDefault();
    if (email === "admin@gmail.com" && password === "12345") {
       alert("Login Successful ");
-      navigate("/admin"); 
+      navigate("/"); 
     } else {
       setError("Invalid email or password ");
     }
