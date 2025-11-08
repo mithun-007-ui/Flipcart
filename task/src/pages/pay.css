@@ -1,0 +1,39 @@
+.payment-container {
+  width: 400px;
+  margin: 60px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.payment-container h2 {
+  text-align: center;
+  color: #333;
+}
+
+.form-section {
+  margin-bottom: 20px;
+}
+
+input, select {
+  width: 100%;
+  margin: 8px 0;
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.pay-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.pay-btn:hover {
+  background-color: #218838;
+}
