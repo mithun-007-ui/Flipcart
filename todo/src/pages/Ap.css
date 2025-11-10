@@ -1,0 +1,16 @@
+.home{
+
+    border-radius: 15px;
+    
+    max-width: 200px;
+    text-align: center;
+    height: 20px;
+    width: 80px;
+}
+.body{
+    text-align: center;
+    align-items:center;
+    justify-content: center;
+    background-color: beige;
+}
+
