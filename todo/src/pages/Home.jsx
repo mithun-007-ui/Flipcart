@@ -1,31 +1,47 @@
-import React from 'react'
-import {useState} from 'react'
-import './Ap.css'
+import React, { useState } from "react";
 
-function Hme() {
-    const [text,setText] = useState("")
-    const [task,setTask]=useState([]);
-    const reportSubmit = (a) =>{
-        setTask([...task,text]);
-        setText("");
+function Home({ tasks, setTasks }) {
+  const [text, setText] = useState("");
+
+  const addTask = () => {
+    if (text.trim() === "") {
+      alert("Please type a task!");
+      return;
     }
+    const now = new Date();
+    const dateTime = now.toLocaleString();
+    const newTask = {
+      id: Date.now(),
+      name: text,
+      date: dateTime,
+      completed: false,
+    };
+    setTasks([...tasks, newTask]);
+    setText("");
+  };
+
   return (
-    
-      <div className='body'>
-      <h1>TODO</h1>
-   <input type="text" 
-    value={text}
-    onChange={(e) => setText(e.target.value)}/>&nbsp;
-  <button onClick={reportSubmit}>Add Task</button>
+    <div>
+      <h1>TODO - Home</h1>
+      <input
+        type="text"
+        value={text}
+        onChange={(e) => setText(e.target.value)}
+        placeholder="Enter your task"
+      />
+      &nbsp;
+      <button onClick={addTask}>Add Task</button>
 
-<ul>
- {task.map((txt, index) => (
-  <li key={index}>{txt}</li>
- ))}  
-</ul>
-</div>
-
-  )
+      <ul>
+        {tasks.map((t) => (
+          <li key={t.id}>
+            {t.name} <br />
+            <small>Added on: {t.date}</small>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 }
 
-export default Hme
+export default Home;
