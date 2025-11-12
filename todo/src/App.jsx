@@ -3,16 +3,17 @@ import { Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import Pending from "./pages/Pending";
 import History from "./pages/History";
+import './App.css'
 
 function App() {
   const [tasks, setTasks] = useState([]);
 
   return (
     <div className="body">
-      <nav>
-        <Link to="/">Home</Link> |{" "}
-        <Link to="/pending">Pending</Link> |{" "}
-        <Link to="/history">History</Link>
+      <nav className="list">
+        <Link  to="/">Home</Link> &nbsp;&nbsp;&nbsp;&nbsp;
+        <Link to="/pending">Pending</Link> &nbsp;&nbsp;&nbsp;&nbsp;
+        <Link to="/history">History</Link>&nbsp;&nbsp;&nbsp;
       </nav>
 
       <Routes>

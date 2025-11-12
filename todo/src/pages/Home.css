@@ -1,0 +1,11 @@
+.addbtn{
+    border-radius: 20px;
+    background-color:rgb(193, 151, 11);
+    transform: scale(1.1);
+    color: black;
+}
+body{
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+}

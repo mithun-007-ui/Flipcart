@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-
+import React from 'react'
+import { useState } from 'react';
+import './Home.css'
 function Home({ tasks, setTasks }) {
-  const [text, setText] = useState("");
-
+const [text, setText] = useState("");
   const addTask = () => {
     if (text.trim() === "") {
       alert("Please type a task!");
@@ -19,7 +19,6 @@ function Home({ tasks, setTasks }) {
     setTasks([...tasks, newTask]);
     setText("");
   };
-
   return (
     <div>
       <h1>TODO - Home</h1>
@@ -30,8 +29,7 @@ function Home({ tasks, setTasks }) {
         placeholder="Enter your task"
       />
       &nbsp;
-      <button onClick={addTask}>Add Task</button>
-
+      <button  className ="addbtn"onClick={addTask}>Add Task</button>
       <ul>
         {tasks.map((t) => (
           <li key={t.id}>

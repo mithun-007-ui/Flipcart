@@ -13,18 +13,17 @@ function Pending({ tasks, setTasks }) {
       {pending.length === 0 ? (
         <p>No pending tasks 🎉</p>
       ) : (
-        <ul>
-          {pending.map((t) => (
-            <li key={t.id}>
-              {t.name}
-              <br />
-              <small>Added on: {t.date}</small>
-              <br />
-              <button onClick={() => completeTask(t.id)}>Complete</button>
-              <button onClick={() => deleteTask(t.id)}>Delete</button>
-            </li>
-          ))}
-        </ul>
+  <ul>
+  {pending.map((t) => (
+  <li key={t.id}>
+  {t.name}<br />            
+  <small>Added on: {t.date}</small>
+  <br />
+  <button onClick={() => completeTask(t.id)}>Complete</button>
+   <button onClick={() => deleteTask(t.id)}>Delete</button>
+  </li>
+  ))}
+</ul>
       )}
     </div>
   );
